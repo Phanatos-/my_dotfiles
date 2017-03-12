@@ -94,11 +94,11 @@ bindsym $mod+a focus parent
 set $workspace1 "1 "
 set $workspace2 "2 "
 set $workspace3 "3 "
-set $workspace4 "4 "
-set $workspace5 "5 "
+set $workspace4 "4 "
+set $workspace5 "5 "
 set $workspace6 "6 "
 set $workspace7 "7 "
-set $workspace8 "8 "
+set $workspace8 "8 "
 set $workspace9 "9 "
 set $workspace10 "10 "
 
@@ -164,6 +164,7 @@ bindsym $mod+r mode "resize"
 #set $text-color          #f3f4f5
 #set $inactive-text-color #676E7D
 #set $urgent-bg-color     #E53935
+
 set $bg-color            #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
@@ -174,8 +175,8 @@ set $urgent-bg-color     #E53935
 # window colors
 # #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 
 # # bar
@@ -213,10 +214,27 @@ for_window [class="Filezilla"] floating enable
 for_window [class="File-roller"] floating enable
 for_window [class="Gnome-terminal"] floating enable
 
-exec compton -f
+exec_always compton -f
 exec_always --no-startup-id feh --bg-scale /home/phanatos/.wallpaper.jpg
+
 assign [class="^Firefox$"] $workspace1
 assign [class="^Gnome-terminal$"] $workspace2
 assign [class="^QtCreator$"] $workspace3
 assign [class="^URxvt$"] $workspace2
 assign [class="^Skype$"] $workspace9
+assign [instance="^Pharo$"] $workspace3
+assign [class="^Thunderbird$"] $workspace8
+assign [class="^Rhythmbox$"] $workspace10
+assign [class="^Sol$"] $workspace4
+assign [class="^Gnome-chess$"] $workspace4
+assign [class="^Gnome-mahjongg$"] $workspace4
+assign [class="^Gnome-sudoku$"] $workspace4
+assign [instance="^libreoffice$"] $workspace5
+
+
+
+
+
+
+
+

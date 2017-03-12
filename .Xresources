@@ -1,4 +1,3 @@
-
 URxvt.depth:                32
 URxvt.geometry:             90x30
 ! URxvt.transparent:          true
@@ -6,13 +5,13 @@ URxvt.geometry:             90x30
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
-URxvt.saveLines:            50
+URxvt.saveLines:            500
 URxvt.internalBorder:       3
 URxvt.lineSpace:            0
 
 ! Fonts
 URxvt*font: xft:Monospace:pixelsize=14
-URxvt*boldFont: xft:Monospace:pixelsize=14
+URxvt*boldFont: xft:Monospace:bold:pixelsize=14
 
 ! Fix font space
 URxvt*letterSpace: -1
@@ -28,41 +27,61 @@ URxvt.urlLauncher:          firefox
 
 ! Cursor
 URxvt.cursorBlink:          true
-URxvt.cursorColor:          #657b83
 URxvt.cursorUnderline:      false
 
 ! Pointer
 URxvt.pointerBlank:         true
 
-URxvt*background: rgba:0000/0000/0200/c800 
+!! URxvt*background: rgba:0000/0000/0200/c800
+!URxvt*background: [70]#000000 
 ! *background: #1c1b1a
-URxvt*foreground: #FCF0D7
-URxvt*cursorColor: #45547A
-URxvt*scrollColor: #45413b
-URxvt*fadeColor: #ffffff
-URxvt*fading: 20
+!URxvt*foreground: #FCF0D7
+!URxvt*scrollColor: #45413b
+!URxvt*fadeColor: #ffffff
+!URxvt*fading: 50
+
+! ------------------------------------------------------------------------------
+! --- Color scheme -------------------------------------------------------------
+! ------------------------------------------------------------------------------
+
+! special
+URxvt*foreground:   #eeeeee
+URxvt*background:   [70]#111110
+URxvt*cursorColor:  #eeeeee
 
 ! black
-URxvt*color0:   #141413
-URxvt*color8:   #000000
+*color0:       #5a5a5a
+*color8:       #939393
+
 ! red
-URxvt*color1:   #A10018
-URxvt*color9:   #A10018
+*color1:       #dc2566
+*color9:       #fa2772
+
 ! green
-URxvt*color2:   #AECA61
-URxvt*color10:  #AECA61
+*color2:       #8fc029
+*color10:      #a7e22e
+
 ! yellow
-URxvt*color3:   #D3BB30
-URxvt*color11:  #E4A342
+*color3:       #d4c96e
+*color11:      #e7db75
+
 ! blue
-URxvt*color4:   #295C89
-URxvt*color12:  #0970C9
+*color4:       #55bcce
+*color12:      #66d9ee
+
 ! magenta
-URxvt*color5:   #FF9FD7
-URxvt*color13:  #FF9FD7
+*color5:       #9358fe
+*color13:      #ae82ff
+
 ! cyan
-URxvt*color6:   #47A76D
-URxvt*color14:  #47A76D
+*color6:       #56b7a5
+*color14:      #66efd5
+
 ! white
-URxvt*color7:   #d9cec3
-URxvt*color15:  #ffffff
+*color7:       #acada1
+*color15:      #cfd0c2
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
+
