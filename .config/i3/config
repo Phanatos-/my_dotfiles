@@ -91,6 +91,7 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# define workspaces names and label
 set $workspace1 "1 "
 set $workspace2 "2 "
 set $workspace3 "3 "
@@ -159,18 +160,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# define color variables
 set $rofi-bg             #132335
 set $rofi-fg             #D9E4F9
 set $rofi-bgalt          #0D304B
 set $rofi-hlfg           #D9E4F9
 set $rofi-hlbg           #B34390
 
-set $bg-color            #2f343f
-set $inactive-bg-color   #2f343f
+set $bg-color            #2B292A
+set $inactive-bg-color   #2B292A
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
-
 
 # window colors
 #                       border              background         text                 indicator
@@ -179,13 +180,14 @@ client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-co
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 
-# # bar
+# bar
 bar {
     status_command i3blocks -c /home/phanatos/.config/i3/i3blocks.conf
-    #status_command i3status
     colors {
-        background $bg-color
+        background $bg-color 
         separator #757575
+        
+        # define workspaces names and labelss
         #                  border             background         text
         focused_workspace  $bg-color          $bg-color          $text-color
         inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
@@ -196,15 +198,14 @@ bar {
 # Screenshot 
 bindsym $mod+Shift+s exec "scrot '%F-%T_scrot.png' -e 'mv $f ~/Pictures/Screenshots/'"
 
-# start dmenu (a program launcher)
+# start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run -lines 1 -eh 2 -fullscreen -opacity "85" -bw 0 -font "System San Francisco Display 18"
-# There also is the (new) i1-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i1-dmenu-desktop
 
+# Define per program styles 
 for_window [class="XTerm"] floating enable
+for_window [class="URxvt"] border pixel 1
 for_window [class="URxvt"] floating enable
+for_window [class="Thunar"] border pixel 1
 for_window [class="Thunar"] floating enable
 for_window [class="Nautilus"] floating enable
 for_window [class="GParted"] floating enable
@@ -214,9 +215,11 @@ for_window [class="Filezilla"] floating enable
 for_window [class="File-roller"] floating enable
 for_window [class="Gnome-terminal"] floating enable
 
+# we should always start this everytime we reset i3
 exec_always compton -f
 exec_always --no-startup-id feh --bg-scale /home/phanatos/.wallpaper.jpg
 
+# assign programs to specific workspaces 
 assign [class="^Firefox$"] $workspace1
 assign [class="^Gnome-terminal$"] $workspace2
 assign [class="^QtCreator$"] $workspace3

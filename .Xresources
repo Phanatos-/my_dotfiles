@@ -1,5 +1,5 @@
 URxvt.depth:                32
-URxvt.geometry:             80x24
+URxvt.geometry:             100x23
 ! URxvt.transparent:          true
 ! URxvt.shading:              60
 ! URxvt.urgentOnBell:         true
@@ -46,16 +46,16 @@ URxvt.pointerBlank:         true
 
 ! special
 URxvt*foreground:   #eeeeee
-URxvt*background:   [70]#111110
+URxvt*background:   [70]#111111
 URxvt*cursorColor:  #eeeeee
 
 ! black
-*color0:       #5a5a5a
-*color8:       #939393
+*color0:       #1C1C1C
+*color8:       #262626
 
 ! red
-*color1:       #dc2566
-*color9:       #fa2772
+*color1:       #DC2525
+*color9:       #F9272A
 
 ! green
 *color2:       #8fc029
@@ -65,9 +65,9 @@ URxvt*cursorColor:  #eeeeee
 *color3:       #d4c96e
 *color11:      #e7db75
 
-! blue
-*color4:       #55bcce
-*color12:      #66d9ee
+! red
+*color4:       #E5203C
+*color12:      #E52061
 
 ! magenta
 *color5:       #9358fe
