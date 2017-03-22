@@ -91,12 +91,12 @@ URxvt*cursorColor:  #eeeeee
 ! ------------------------------------------------------------------------------
 ! "Color scheme for normal row" Set from: Default
 ! State:                             bg      fg      bgalt   hlbg    hlfg
-rofi.color-normal:                   #132335,#D9E4F9,#0D3048,#B34390,#D9E4F9
+rofi.color-normal:                   #2B292A,#D9E4F9,#353334,#E5203C,#D9E4F9
 ! "Color scheme for urgent row" Set from: Default
-rofi.color-urgent:                   #132335,#D9E4F9,#0D3048,#B34390,#D9E4F9
+rofi.color-urgent:                   #2B292A,#D9E4F9,#353334,#E5203C,#D9E4F9
 ! "Color scheme for active row" Set from: Default
-rofi.color-active:                   #132335,#D9E4F9,#0D3048,#B34390,#D9E4F9
+rofi.color-active:                   #2B292A,#D9E4F9,#353334,#E5203C,#D9E4F9
 ! "Color scheme window" Set from: Default
-rofi.color-window:                   #132335,#D9E4F9
+rofi.color-window:                   #2B292A,#D9E4F9
 ! "Separator style (none, dash, solid)" Set from: Default
 rofi.separator-style:                dash

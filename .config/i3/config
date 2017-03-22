@@ -160,13 +160,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# define color variables
-set $rofi-bg             #132335
-set $rofi-fg             #D9E4F9
-set $rofi-bgalt          #0D304B
-set $rofi-hlfg           #D9E4F9
-set $rofi-hlbg           #B34390
-
 set $bg-color            #2B292A
 set $inactive-bg-color   #2B292A
 set $text-color          #f3f4f5
