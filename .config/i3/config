@@ -190,6 +190,8 @@ bar {
 
 # Screenshot 
 bindsym $mod+Shift+s exec "scrot '%F-%T_scrot.png' -e 'mv $f ~/Pictures/Screenshots/'"
+bindsym $mod+Shift+t exec Thunar
+bindsym $mod+Shift+f exec firefox 
 
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run -lines 1 -eh 2 -fullscreen -opacity "85" -bw 0 -font "System San Francisco Display 18"
