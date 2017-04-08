@@ -1,0 +1,4 @@
+PATH DEFAULT=${PATH}:/opt/Qt/Tools/QtCreator/bin
+PATH DEFAULT=${PATH}:/home/phanatos/pharo5.0
+
+
